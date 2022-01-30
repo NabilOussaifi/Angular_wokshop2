@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table table-bordered table-hover" >
+        <tr>
+            <th>userID</th>
+            <th>ID</th>
+            <th>title</th>
+            <th>completed</th>
+        </tr>
+        <tr *ngFor="let l of ListTodo">
+            <td>{{l.userid}}</td>
+            <td>{{l.id}}</td>
+            <td>{{l.title}}</td>
+            <td>{{l.completed}}</td>
+        </tr>
+    </table>
+
+<button class="btn btn-sucess" (click)="getCalcul()">Calcul</button>
+<h1>Resultat {{count}}</h1>
+</div>

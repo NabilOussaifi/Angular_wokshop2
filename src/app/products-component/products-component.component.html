@@ -1,0 +1,17 @@
+<div class="row row-cols-4">
+    <div *ngFor='let p of ListProduct'>
+        <div class="card">
+            <img class="card-img-top" src="../../assets/tshirt.jpg" alt="Card image" width="100px" height="200px">
+            <div class="card-body">
+                <h4 class="card-title">{{p.id}}</h4>
+                <h4 class="card-title">{{p.title}} {{p.price}}</h4>
+                <a routerLink="{{p.id}}">detail</a>
+                <p class="card-text">Some example text. Some example text.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-sucess" (click)="caltitle()">Calcul</button>
+<h1>Resultat {{k}}</h1>
